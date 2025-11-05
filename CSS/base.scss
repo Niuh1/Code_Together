@@ -1,0 +1,36 @@
+$main-color:#333;
+$secondary-color:rgb(12, 12, 12);
+$font-family:"roboto", arial, sans-serif;
+$white:#fff;
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;  
+}

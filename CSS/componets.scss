@@ -1,0 +1,24 @@
+button{
+            @extend .btn;
+            background:none;
+            border: none;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+                &:hover{
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        
+            p{
+                @include flex-center;
+                margin: 0;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+        }
