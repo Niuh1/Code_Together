@@ -1,7 +1,7 @@
-$main-color:#333;
-$secondary-color:rgb(12, 12, 12);
-$font-family:"roboto", arial, sans-serif;
-$white:#fff;
+$main-color: #333;
+$secondary-color: rgb(12, 12, 12);
+$font-family: "roboto", arial, sans-serif;
+$white: #fff;
 
 @mixin flex-center{
     display: flex;
@@ -205,6 +205,30 @@ body{
                 font-weight: 500;
             }
 
+        }
+    }
+}
+
+.footer{
+    background-color: $main-color;
+    color: $white;
+    @include flex-column;
+    padding: 20px 0;
+    text-align: center;
+
+    p{
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .footer__link{
+        color: $white;
+        text-decoration: none;
+        margin: 5px 10px;
+        font-size: 16px;
+
+        &:hover{
+            text-decoration: underline;
         }
     }
 }
